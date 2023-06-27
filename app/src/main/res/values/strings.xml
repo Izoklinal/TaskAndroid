@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">activity_1</string>
+    <string name="Plan">Планировщик задач</string>
+    <string name="email">email:</string>
+    <string name="password">Пароль:</string>
+    <string name="enter_password">введите пароль</string>
+    <string name="mail_example_com">mail@example.com</string>
+    <string name="enter_system">Вход в систему</string>
+</resources>
