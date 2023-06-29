@@ -8,10 +8,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class RecyclerViewAdapter(private val data: List<Task> = emptyList()) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
-
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val titleTextView: TextView = itemView.findViewById(R.id.textName)
         val descriptionTextView: TextView = itemView.findViewById(R.id.textDescription)
@@ -44,6 +45,7 @@ class RecyclerViewAdapter(private val data: List<Task> = emptyList()) :
                 holder.statusBtn.setBackgroundColor(Color.parseColor("#00A9EC"))
                 holder.statusBtn.text = "Отметить как выполненную"
             }
+
         }
         holder.bind(task)
     }
