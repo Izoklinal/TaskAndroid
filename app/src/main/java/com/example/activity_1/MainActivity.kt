@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             if (email != "" && password != "") {
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
-                        Log.d("denis", "3")
                         if (task.isSuccessful) {
                             val user = auth.currentUser
                             val intent = Intent(this, TasksActivity::class.java)

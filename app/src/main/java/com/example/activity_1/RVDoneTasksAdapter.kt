@@ -27,11 +27,10 @@ class RVDoneTasksAdapter(val tasks: List<Task>) : RecyclerView.Adapter<RVDoneTas
     override fun getItemCount() = tasks.size
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.name.text = tasks[position].name
-        holder.desc.text = tasks[position].desc
-        holder.dateDone.text = tasks[position].dateDone.toString()
-        holder.deadline.text = tasks[position].deadline.toString()
+        holder.name.text = tasks[position].title
+        holder.desc.text = tasks[position].description
+        holder.dateDone.text = tasks[position].dateDone
+        holder.deadline.text = tasks[position].deadline
         holder.status.text = tasks[position].status.toString()
-
     }
 }
