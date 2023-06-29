@@ -21,7 +21,7 @@ RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
         val itemView = LayoutInflater
             .from(parent.context)
             .inflate(R.layout.recyclerview_element, parent, false)
-        return  MyViewHolder(itemView)
+        return MyViewHolder(itemView)
     }
 
     override fun getItemCount() = tasks.size
